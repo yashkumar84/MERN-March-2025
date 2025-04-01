@@ -1,0 +1,35 @@
+var dhoni = {
+    name : "MS Dhoni",
+    fifty : 200,
+    age : 45 , 
+    strikeRate : 120
+};
+undefined
+dhoni.fifty;
+200
+var arr = [dhoni , {name : "Kholi" , age : 38 }];
+undefined
+arr[0].name;
+'MS Dhoni'
+arr[1].name;
+'Kholi'
+arr[1].namu;
+undefined
+dhoni.century = 100;
+100
+dhoni;
+{name: 'MS Dhoni', fifty: 200, age: 45, strikeRate: 120, century: 100}
+dhoni.6 = 100;
+VM546:1 Uncaught SyntaxError: Unexpected number
+dhoni[6] = 100;
+100
+dhoni;
+{6: 100, name: 'MS Dhoni', fifty: 200, age: 45, strikeRate: 120, century: 100}
+dhoni["four"] = 700;
+700
+dhoni;
+{6: 100, name: 'MS Dhoni', fifty: 200, age: 45, strikeRate: 120, century: 100, …}6: 100age: 45century: 100fifty: 200four: 700name: "MS Dhoni"strikeRate: 120[[Prototype]]: Object
+delete dhoni[6];
+true
+dhoni;
+{name: 'MS Dhoni', fifty: 200, age: 45, strikeRate: 120, century: 100, …}
