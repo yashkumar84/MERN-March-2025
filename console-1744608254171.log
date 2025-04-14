@@ -1,0 +1,126 @@
+//Hello World
+undefined
+console.log("Hello Arshiya");
+VM204:1 Hello Arshiya
+undefined
+alert("Hello Arshiya");
+undefined
+prompt("Enter The Value Of A");
+
+'yash'
+console.error("Hello Error");
+VM370:1 Hello Error
+(anonymous) @ VM370:1
+undefined
+console.warn("Hello Warning");
+VM399:1 Hello Warning
+(anonymous) @ VM399:1
+undefined
+// variable
+undefined
+var a = 10;
+undefined
+int a = 10;
+VM495:1 Uncaught SyntaxError: Unexpected identifier 'a'
+// number 
+undefined
+typeof a;
+'number'
+a = "Yash";
+'Yash'
+typeof a;
+'string'
+a = 10.10;
+10.1
+typeof a;
+'number'
+a = "a";
+'a'
+a = 'a';
+'a'
+//Primitive - Value Types 
+undefined
+//Non - Primitives - Refrence Type 
+undefined
+var a = 10;
+undefined
+// 7
+undefined
+// 1. number 
+undefined
+NaN
+NaN
+a = "10";
+'10'
+a= parseInt(a);
+10
+a;
+10
+var y = parseInt("Yash");
+undefined
+y;
+NaN
+typeof NaN;
+'number'
+y;
+NaN
+isNaN(y);
+true
+isNaN(a);
+false
+//String
+undefined
+a = "Yash";
+'Yash'
+a.toUpperCase();
+'YASH'
+a;
+'Yash'
+a.toLowerCase();
+'yash'
+a.charAt(3);
+'h'
+a.endsWith("g");
+false
+a.startsWith("Y")
+true
+a.includes("a");
+true
+a.includes("a" , 1);
+true
+a.indexOf("Y");
+0
+a.indexOf("h");
+3
+a.length;
+4
+a.substring(1 , 3);
+'as'
+ a.slice(1);
+'ash'
+a;
+'Yash'
+//boolean
+undefined
+a =true;
+true
+a = false;
+false
+typeof a;
+'boolean'
+//bigint
+undefined
+Number.MAX_SAFE_INTEGER;
+9007199254740991
+a = 83797398723487328798327498239832;
+8.379739872348733e+31
+a = 9837892323892394823789237982388732n;
+9837892323892394823789237982388732n
+typeof a;
+'bigint'
+var t;
+undefined
+t;
+undefined
+typeof t;
+'undefined'
