@@ -1,0 +1,139 @@
+var y;
+undefined
+var a = 09;
+undefined
+a = unde
+VM247:1 Uncaught ReferenceError: unde is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM247:1
+a = undefined;
+undefined
+a;
+undefined
+//Null
+undefined
+a = [1, 2, 3, 4, 5];
+(5) [1, 2, 3, 4, 5]
+a = null;
+null
+a = 10;
+10
+a = null;
+null
+typeof null;
+'object'
+a = Symbol("Yash");
+Symbol(Yash)
+b = Symbol("Yash");
+Symbol(Yash)
+a == b;
+false
+// Non - Primitive Datatypes
+undefined
+// Array
+// Object
+// Function
+undefined
+//Operators
+undefined
+//Arithmetic Operators
+undefined
+// + , - , * , / , % , ++ , --
+undefined
+//Binary Operators , Unary Operators
+undefined
+1 + 2
+3
+a = 10;
+10
+a++;
+10
+a;
+11
+++a;
+12
+a--;
+12
+a;
+11
+--a;
+10
+7 / 2;
+3.5
+7 % 2;
+1
+27 % 6;
+3
+900 / 10;
+90
+900 % 10;
+0
+2 ** 3;
+8
+//Conditional Operators 
+undefined
+// > , < , <= , >= , == , === , != , !==
+undefined
+10 > 9;
+
+true
+9 > 10;
+false
+10 < 9;
+false
+10  < 10;
+false
+10 <= 10;
+true
+10 >= 8;
+true
+10 >= 10;
+true
+10 >= 11;
+false
+10 == 10;
+true
+10 == "10";
+true
+10 ===  "10"; 
+false
+10 != 9;
+true
+10 != "10";
+false
+10 !== "10";
+true
+// Assignmtnt Operators 
+undefined
+// = , += , -= , *= , /= , %= , |= , &= , ^=
+undefined
+a = 10;
+10
+a += 2;   //a = a + 2;
+12
+a;
+12
+a -= 2;
+10
+a *= 2;
+20
+// Logical Operators 
+undefined
+// && , || , !
+undefined
+20 > 10 && 20 > 17 && 70 > 67
+true
+20 > 30 || 30 > 20;
+true
+!true;
+false
+!false;
+true
+!(10 > 20);
+true
+//Bitwise Operators
+undefined
+// | , & , ~ , ^ , << , >>
+undefined
+5 | 7;
+7
