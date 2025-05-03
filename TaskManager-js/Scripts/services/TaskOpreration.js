@@ -1,25 +1,33 @@
 import { Task } from "../model/Task.js";
 
-const taskOperation = {
+export const taskOperation = {
   tasks: [],
-  addTask: (taskObject) => {
+  addTask(taskObject) {
     const id = Math.floor(Math.random() * 1000);
     const task = new Task(
       id,
       taskObject.name,
-      taskObject.description,
+      taskObject.desc,
       taskObject.date,
-      taskObject.priority,
+      taskObject.Priority,
       taskObject.color
     );
+    console.log(this.tasks);
 
-    
+    const exist = this.tasks.find(
+      (t) =>
+        t.id === task.id || t.name.toLowerCase() === task.name.toLowerCase()
+    );
+    if (exist) {
+      console.log("Task Already Exist");
+      return;
+    }
     this.tasks.push(task);
   },
-  deleteTask: () => {},
-  editTask: () => {},
+  deleteTask() {},
+  editTask() {},
 
-  getTaskById: () => {},
+  getTaskById() {},
 
-  getTasks: () => {},
+  getTasks() {},
 };

@@ -14,6 +14,7 @@
       integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
       crossorigin="anonymous"
     ></script>
+
     <title>Task Manager</title>
   </head>
   <body>
@@ -23,17 +24,22 @@
       <form>
         <div class="form-group">
           <label class="m-3 font-weight-bold">Task Name</label>
-          <input class="form-control" type="text" />
+          <input id="name" class="form-control" type="text" />
         </div>
 
         <div class="form-group">
           <label class="m-3 font-weight-bold">Task Description</label>
-          <textarea class="form-control" rows="4" cols="10"></textarea>
+          <textarea
+            id="desc"
+            class="form-control"
+            rows="4"
+            cols="10"
+          ></textarea>
         </div>
 
         <div class="form-group">
           <label class="m-3 font-weight-bold">Date</label>
-          <input class="form-control" type="date" />
+          <input id="date" class="form-control" type="date" />
         </div>
 
         <div class="form-group">
@@ -47,13 +53,17 @@
 
         <div class="form-group">
           <label class="m-3 font-weight-bold">Date</label>
-          <input class="form-control" type="color" />
+          <input id="color" class="form-control" type="color" />
         </div>
 
         <div class="form-group mt-4">
-          <button class="btn btn-primary">Add Task</button>
+          <button id="addTask" class="btn btn-primary">Add Task</button>
         </div>
       </form>
+
+      <div id="tasks" class="tasks d-flex flex-wrap"></div>
     </div>
+
+    <script src="./Scripts/controller/controller.js" type="module"></script>
   </body>
 </html>
