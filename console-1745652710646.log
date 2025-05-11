@@ -1,0 +1,164 @@
+let arr = [10 , 20 , 30 , 40 ,50];
+undefined
+arr.map((ele)=> ele + 10);
+(5) [20, 30, 40, 50, 60]
+let price = [100 , 200 , 300 , 400 , 500];
+undefined
+price.map((ele)=> "₹ " + ele);
+(5) ['₹ 100', '₹ 200', '₹ 300', '₹ 400', '₹ 500']
+//Filter
+undefined
+pc;
+VM757:1 Uncaught ReferenceError: pc is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM757:1
+price;
+(5) [100, 200, 300, 400, 500]0: 1001: 2002: 3003: 4004: 500length: 5[[Prototype]]: Array(0)
+price.filter((ele)=>ele <= 300);
+(3) [100, 200, 300]
+price.map((ele)=>ele <= 300);
+(5) [true, true, true, false, false]0: true1: true2: true3: false4: falselength: 5[[Prototype]]: Array(0)
+price.reduce((acc , ele)=>acc + ele);
+1500
+let products = [{name : "Shoes" , price : 1000} , {name : "Tshirt" , price : 700} , {name : "Mobile" , price : 18000}];
+undefined
+products.reduce((acc , ele)=>acc.price + ele.price);
+NaN
+undefined + 3;
+NaN
+products.reduce((acc , ele)=>acc + ele.price , 0);
+19700
+products.reduce((acc , ele)=>acc + ele.price , 0 );
+19700
+products.find((ele)=>ele.name === "Tshirt");
+{name: 'Tshirt', price: 700}
+let obj = products.find((ele)=>ele.name === "Tshirt");
+undefined
+obj;
+{name: 'Tshirt', price: 700}
+let obj = products.findIndex((ele)=>ele.name === "Tshirt");
+undefined
+obj;
+1
+products.splice(obj , 1);
+[{…}]0: {name: 'Tshirt', price: 700}length: 1[[Prototype]]: Array(0)
+products;
+(2) [{…}, {…}]0: {name: 'Shoes', price: 1000}1: {name: 'Mobile', price: 18000}length: 2[[Prototype]]: Array(0)
+product[0].price = 2000;
+VM1886:1 Uncaught ReferenceError: product is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM1886:1
+products[0].price = 2000;
+2000
+products;
+(2) [{…}, {…}]0: {name: 'Shoes', price: 2000}1: {name: 'Mobile', price: 18000}length: 2[[Prototype]]: Array(0)
+products.forEach((ele)=>console.log(ele.name));
+VM2104:1 Shoes
+VM2104:1 Mobile
+undefined
+let line = "Hello My name is Yash";
+undefined
+line.split(" ");
+(5) ['Hello', 'My', 'name', 'is', 'Yash']
+let words = line.split(" ");
+undefined
+words;
+(5) ['Hello', 'My', 'name', 'is', 'Yash']
+words.join(" ");
+'Hello My name is Yash'
+words.reverse();
+(5) ['Yash', 'is', 'name', 'My', 'Hello']
+words.splice(1 , 1 , 67);
+['is']
+words;
+(5) ['Yash', 67, 'name', 'My', 'Hello']
+words.with(2 , 56);
+(5) ['Yash', 67, 56, 'My', 'Hello']
+words;
+(5) ['Yash', 67, 'name', 'My', 'Hello']
+arr;
+(5) [10, 20, 30, 40, 50]
+arr = [50 , 30 , 10 , 60 , 70 , 40];
+(6) [50, 30, 10, 60, 70, 40]
+arr.sort((a , b)=> a - b);
+(6) [10, 30, 40, 50, 60, 70]
+arr.sort((a , b)=> b - a);
+(6) [70, 60, 50, 40, 30, 10]
+arr.sort();
+(6) [10, 30, 40, 50, 60, 70]
+setTimeout(()=>{
+    console.log("Chlo Bhai");
+});
+console.log("Tum Bhi Chlo Bhai");
+VM3285:4 Tum Bhi Chlo Bhai
+undefined
+VM3285:2 Chlo Bhai
+setTimeout(()=>{
+    console.log("Chlo Bhai");
+} , 3000);
+console.log("Tum Bhi Chlo Bhai");
+VM3306:4 Tum Bhi Chlo Bhai
+undefined
+VM3306:2 Chlo Bhai
+let interval = setInterval(()=>{
+    console.log("Hello Interval");
+} , 3000);
+undefined
+VM3421:2 Hello Interval
+VM3421:2 Hello Interval
+VM3421:2 Hello Interval
+VM3421:2 Hello Interval
+VM3421:2 Hello Interval
+VM3421:2 Hello Interval
+VM3421:2 Hello Interval
+VM3421:2 Hello Interval
+VM3421:2 Hello Interval
+VM3421:2 Hello Interval
+VM3421:2 Hello Interval
+VM3421:2 Hello Interval
+VM3421:2 Hello Interval
+VM3421:2 Hello Interval
+VM3421:2 Hello Interval
+VM3421:2 Hello Interval
+VM3421:2 Hello Interval
+VM3421:2 Hello Interval
+VM3421:2 Hello Interval
+VM3421:2 Hello Interval
+VM3421:2 Hello Interval
+VM3421:2 Hello Interval
+VM3421:2 Hello Interval
+VM3421:2 Hello Interval
+VM3421:2 Hello Interval
+VM3421:2 Hello Interval
+VM3421:2 Hello Interval
+VM3421:2 Hello Interval
+VM3421:2 Hello Interval
+VM3421:2 Hello Interval
+VM3421:2 Hello Interval
+VM3421:2 Hello Interval
+VM3421:2 Hello Interval
+VM3421:2 Hello Interval
+VM3421:2 Hello Interval
+VM3421:2 Hello Interval
+VM3421:2 Hello Interval
+VM3421:2 Hello Interval
+VM3421:2 Hello Interval
+VM3421:2 Hello Interval
+VM3421:2 Hello Interval
+VM3421:2 Hello Interval
+VM3421:2 Hello Interval
+VM3421:2 Hello Interval
+VM3421:2 Hello Interval
+VM3421:2 Hello Interval
+VM3421:2 Hello Interval
+VM3421:2 Hello Interval
+VM3421:2 Hello Interval
+VM3421:2 Hello Interval
+VM3421:2 Hello Interval
+VM3421:2 Hello Interval
+VM3421:2 Hello Interval
+VM3421:2 Hello Interval
+VM3421:2 Hello Interval
+VM3421:2 Hello Interval
+clearInterval(interval);
+undefined

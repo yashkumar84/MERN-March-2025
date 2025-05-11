@@ -1,0 +1,103 @@
+//Asnconous Pogramming
+undefined
+//Asyncronous Pogramming
+undefined
+//Destructuring
+undefined
+const obj = {
+    name : "Yash",
+    
+};
+undefined
+obj.name;
+'Yash'
+const { name }= obj;
+undefined
+name;
+'Yash'
+const arr = [1 ,2 ,3 ,4 ,5 ,6 ];
+undefined
+arr[0];
+1
+const [a , b] = arr;
+undefined
+a;
+1
+b;
+2
+const [, , , , c , d] = arr;
+undefined
+c;
+5
+d;
+6
+arr;
+(6) [1, 2, 3, 4, 5, 6]
+const a = arr;
+undefined
+arr;
+(6) [1, 2, 3, 4, 5, 6]
+a;
+(6) [1, 2, 3, 4, 5, 6]
+a[0] = 10;
+10
+arr;
+(6) [10, 2, 3, 4, 5, 6]0: 101: 22: 33: 44: 55: 6length: 6[[Prototype]]: Array(0)
+const deepCopy = [...arr];
+undefined
+deepCopy;
+(6) [10, 2, 3, 4, 5, 6]
+obj;
+{name: 'Yash'}
+const obj1 = {...obj};
+undefined
+obj1;
+{name: 'Yash'}
+const obj2 = {...obj1 , pro : "Trainer"};
+undefined
+obj2;
+{name: 'Yash', pro: 'Trainer'}
+//rest
+undefined
+function add(a , b){
+    return a + b;
+}
+undefined
+function addAll(a , b , ...c){
+    return a + b + c.reduce((acc , ele)=>acc + ele);
+}
+undefined
+addAll(10 , 20);
+VM1343:2 Uncaught TypeError: Reduce of empty array with no initial value
+    at Array.reduce (<anonymous>)
+    at addAll (<anonymous>:2:22)
+    at <anonymous>:1:1
+addAll @ VM1343:2
+(anonymous) @ VM1401:1
+addAll(10 , 20 , 30);
+60
+function addAll(a , b , ...c){
+    if(c.length == 0){
+        return a + b;
+    }
+    return a + b + c.reduce((acc , ele)=>acc + ele);
+}
+undefined
+addAll(10 , 20);
+30
+addAll(10 , 20 , 30 , 40 , 50);
+150
+function addAll(a , b , ...c){
+    if(c.length == 0){
+        return a + b;
+    }
+    console.log(c);
+    return a + b + c.reduce((acc , ele)=>acc + ele);
+}
+undefined
+addAll(10 , 20 , 30 , 40 , 50);
+VM1532:5 (3) [30, 40, 50]
+150
+addAll(10 , 20 , 30 , 40 , 50 , "50");
+VM1532:5 (4) [30, 40, 50, '50']
+'3012050'

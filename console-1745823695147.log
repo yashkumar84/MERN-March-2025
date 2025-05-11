@@ -1,0 +1,108 @@
+function add(a , b){
+    return function (c) {
+        return a + c;
+    }
+}
+undefined
+add(10 , 20)(30);
+40
+//Callbacks
+undefined
+function HOF(callBack){
+    callBack();
+}
+undefined
+function print(){
+    console.log("Hello World");
+}
+undefined
+HOF(print);
+VM240:2 Hello World
+undefined
+//map
+undefined
+const arr = [10 , 20 , 30 , 40 , 50];
+undefined
+//[20 , 30 , 40 , 50 , 60]
+
+
+undefined
+const result = [];
+undefined
+result.push(10);
+1
+result;
+[10]
+result = [];
+VM546:1 Uncaught TypeError: Assignment to constant variable.
+    at <anonymous>:1:8
+(anonymous) @ VM546:1
+for(let i = 0;i<arr.length;i++){
+   result[i] = arr[i] + 10;
+}
+60
+result;
+(5) [20, 30, 40, 50, 60]
+arr.map((ele)=>ele + 10);
+(5) [20, 30, 40, 50, 60]
+arr;
+(5) [10, 20, 30, 40, 50]
+arr;
+(5) [10, 20, 30, 40, 50]
+//['Rs 10' , 'Rs 20' , 'Rs 30' , 'Rs 40' , 'Rs 50']
+undefined
+arr.map((ele)=>'Rs ' + ele);
+(5) ['Rs 10', 'Rs 20', 'Rs 30', 'Rs 40', 'Rs 50']
+const price = [100 , 200 , 300 , 400 , 500];
+undefined
+price.map((ele)=>ele - ele * 10/100);
+(5) [90, 180, 270, 360, 450]
+//Filter 
+undefined
+arr;
+(5) [10, 20, 30, 40, 50]
+price;
+(5) [100, 200, 300, 400, 500]0: 1001: 2002: 3003: 4004: 500length: 5[[Prototype]]: Array(0)
+price.filter((ele)=>ele <= 300);
+(3) [100, 200, 300]
+let sum = 0;
+undefined
+for(let i=0;i<price.length;i++){
+    sum += price[i];
+}
+1500
+price.reduce((acc , ele)=>acc + ele);
+1500
+let products = [{name : "Shoes" , price : 1000} , {name : "Tshirt" , price : 700} , {name : "Mobile" , price : 18000}];
+undefined
+products.reduce((acc , ele)=> acc + ele.price);
+'[object Object]70018000'
+products.reduce((acc , ele)=> acc + ele.price , 0);
+19700
+products.filter((ele)=>ele.name === "Mobile");
+[{…}]0: name: "Mobile"price: 18000[[Prototype]]: Objectlength: 1[[Prototype]]: Array(0)
+products.find((product)=>product.name === "Mobile");
+{name: 'Mobile', price: 18000}name: "Mobile"price: 18000[[Prototype]]: Object
+const index  = products.findIndex((product)=>product.name === "Mobile");
+undefined
+index;
+2
+products.splice(index , 1);
+[{…}]
+products;
+(2) [{…}, {…}]0: {name: 'Shoes', price: 1000}1: {name: 'Tshirt', price: 700}length: 2[[Prototype]]: Array(0)
+products.with(1 , 78);
+(2) [{…}, 78]
+products;
+(2) [{…}, {…}]
+const newArray = products.with(1 , 78);
+
+undefined
+newArray;
+(2) [{…}, 78]
+products.splice(1 , 1 , 78);\
+VM2472:1 Uncaught SyntaxError: Invalid or unexpected token
+products.splice(1 , 1 , 78);
+[{…}]
+products;
+(2) [{…}, 78]

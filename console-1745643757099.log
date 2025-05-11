@@ -1,0 +1,94 @@
+5 & 6;
+4
+9 & 14'
+VM67:1 Uncaught SyntaxError: Invalid or unexpected token
+9 & 14;
+8
+9 ^ 14;
+7
+5 << 1;
+10
+5 << 2;
+20
+5 >> 1
+2
+~4;
+-5
+~7;
+-8
+~-7
+6
+// Conditionals 
+undefined
+var a = 10;
+undefined
+var b = 20;
+undefined
+if(a > b){
+    console.log("A is Greater");
+}else{
+    console.log("B is Greater");
+}
+VM404:4 B is Greater
+undefined
+var c = 90;
+undefined
+a;
+10
+b;
+20
+c;
+90
+if(a > b && a > c){
+    console.log("A is Greatest");
+}else if(b > a && b > c){
+    console.log("B is Greatest");
+}else{
+    console.log("C is Greatest");
+}
+VM721:6 C is Greatest
+undefined
+// loops
+undefined
+// My name is Yash
+undefined
+for(var i = 0;i<10;i++){
+    console.log("My Name is Yash");
+}
+VM925:2 My Name is Yash
+VM925:2 My Name is Yash
+VM925:2 My Name is Yash
+VM925:2 My Name is Yash
+VM925:2 My Name is Yash
+VM925:2 My Name is Yash
+VM925:2 My Name is Yash
+VM925:2 My Name is Yash
+VM925:2 My Name is Yash
+VM925:2 My Name is Yash
+undefined
+for(var i = 0;i<10;i++){
+    console.log("My Name is Yash" , i);
+}
+VM942:2 My Name is Yash 0
+VM942:2 My Name is Yash 1
+VM942:2 My Name is Yash 2
+VM942:2 My Name is Yash 3
+VM942:2 My Name is Yash 4
+VM942:2 My Name is Yash 5
+VM942:2 My Name is Yash 6
+VM942:2 My Name is Yash 7
+VM942:2 My Name is Yash 8
+VM942:2 My Name is Yash 9
+undefined
+console.log("Hello");
+VM1061:1 Hello
+undefined
+i;
+10
+i = 0;
+0
+i;
+0
+var g = 0;
+undefined
+while(g < 10){}

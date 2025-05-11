@@ -1,0 +1,142 @@
+var day = "Sunny";
+undefined
+if(day == "Sunny"){
+    console.log("The Day is Sunny");
+}
+VM156:2 The Day is Sunny
+undefined
+if(day == "Sunny"){
+    console.log("The Day is Sunny");
+}else if(day == "Fog"){
+    console.log("The Day is Foggy");
+}else if(day == "Rain"){
+    console.log("The Day is Rainy");
+}else{
+    console.log("Good Day");
+}
+VM406:2 The Day is Sunny
+undefined
+day = "Fog";
+'Fog'
+if(day == "Sunny"){
+    console.log("The Day is Sunny");
+}else if(day == "Fog"){
+    console.log("The Day is Foggy");
+}else if(day == "Rain"){
+    console.log("The Day is Rainy");
+}else{
+    console.log("Good Day");
+}
+VM439:4 The Day is Foggy
+undefined
+day = "Yash";
+'Yash'
+if(day == "Sunny"){
+    console.log("The Day is Sunny");
+}else if(day == "Fog"){
+    console.log("The Day is Foggy");
+}else if(day == "Rain"){
+    console.log("The Day is Rainy");
+}else{
+    console.log("Good Day");
+}
+VM460:8 Good Day
+undefined
+//Operators 
+undefined
+// 1. Arithmetic Operators 
+undefined
+// + , - , * , / , % , ++ , --
+undefined
+a;
+VM716:1 Uncaught ReferenceError: a is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM716:1
+var a = 60;
+undefined
+a++;
+60
+a;
+61
+++a;
+62
+2 + 6;
+8
+2 - 1;
+1
+1 * 8;
+8
+// %
+undefined
+10 / 4;
+2.5
+10 % 4;
+2
+//Comparision Operators
+undefined
+// > , < , <= , >= , == , === , != , !==
+undefined
+3 > 2;
+true
+2< 3;
+true
+2 == 2;
+true
+2 == "2"
+true
+2 === "2";
+false
+2 === 2;
+true
+3 != 2;
+true
+2 != 2;
+false
+2 != "2";
+false
+2 !== "2";
+true
+2 >= 2;
+true
+// Assignmtnt Operators 
+undefined
+//  = , += , -= , *= , /= , %= 
+undefined
+var a = 1;
+undefined
+a = a + 2;
+3
+a += 2; // a = a + 2
+5
+a -= 2;
+3
+a *= 2;
+6
+a = 10;
+10
+a %= 4;
+2
+// Logical Operators 
+undefined
+// && , || , !
+undefined
+1 > 2 && 3 > 2
+false
+1 > 2 || 3 < 4;
+true
+!(3 > 4);
+true
+!true;
+false
+a = 10;
+10
+var b = 20;
+undefined
+var c = 30;
+undefined
+function add(a , b){
+    return a + b;
+}
+undefined
+add(10 , 20);
+30

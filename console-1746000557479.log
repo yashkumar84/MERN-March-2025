@@ -1,0 +1,121 @@
+//Reference Type 
+undefined
+var a =10;
+undefined
+var arr = [10 , 20 , 30 , 40 , 50];
+undefined
+typeof arr;
+'object'
+a = 32647237427437642747734823647;
+3.2647237427437643e+28
+arr = [3247832342323742237348923798347 , 23423];
+(2) [3.247832342323742e+30, 23423]
+arr = [10 , 20 , 30 , 40 , 50];
+(5) [10, 20, 30, 40, 50]
+arr.push(60);
+6
+arr;
+(6) [10, 20, 30, 40, 50, 60]
+arr.pop(1 ,2 );
+60
+arr;
+(5) [10, 20, 30, 40, 50]
+arr.unshift(60);
+6
+arr;
+(6) [60, 10, 20, 30, 40, 50]
+arr.shift();
+60
+arr;
+(5) [10, 20, 30, 40, 50]
+arr.splice(2 , 1);
+[30]
+arr;
+(4) [10, 20, 40, 50]
+arr.splice(2 , 0 , 30);
+[]
+arr;
+(5) [10, 20, 30, 40, 50]
+arr.indexOf(20);
+1
+arr.lastIndexOf(20);
+1
+arr.includes(20);
+true
+arr.includes(60);
+false
+arr[2];
+30
+for(var i = 0;i < arr.length;i++){
+    console.log(arr[i]);
+}
+VM1007:2 10
+VM1007:2 20
+VM1007:2 30
+VM1007:2 40
+VM1007:2 50
+undefined
+var t = 0;
+undefined
+while(t < 10){
+    console.log(t);
+    t = t + 1;
+}
+VM1091:2 0
+VM1091:2 1
+VM1091:2 2
+VM1091:2 3
+VM1091:2 4
+VM1091:2 5
+VM1091:2 6
+VM1091:2 7
+VM1091:2 8
+VM1091:2 9
+10
+var y = 0;
+do {
+    console.log(y);
+    y = y + 1;
+}while(y < 10);
+VM1189:3 0
+VM1189:3 1
+VM1189:3 2
+VM1189:3 3
+VM1189:3 4
+VM1189:3 5
+VM1189:3 6
+VM1189:3 7
+VM1189:3 8
+VM1189:3 9
+10
+//for of 
+undefined
+arr;
+(5) [10, 20, 30, 40, 50]
+for(var ele of arr){
+    console.log(ele);
+}
+VM1290:2 10
+VM1290:2 20
+VM1290:2 30
+VM1290:2 40
+VM1290:2 50
+undefined
+for(var ele in arr){
+    console.log(ele);
+}
+VM1302:2 0
+VM1302:2 1
+VM1302:2 2
+VM1302:2 3
+VM1302:2 4
+undefined
+for(var ele in arr){
+    console.log(arr[ele]);
+}
+VM1323:2 10
+VM1323:2 20
+VM1323:2 30
+VM1323:2 40
+VM1323:2 50
+undefined

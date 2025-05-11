@@ -1,0 +1,156 @@
+i;
+VM44:1 Uncaught ReferenceError: i is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM44:1
+var g = 0;
+undefined
+while(g < 10){
+    console.log("Hello" , g);
+    g = g + 1;
+}
+VM124:2 Hello 0
+VM124:2 Hello 1
+VM124:2 Hello 2
+VM124:2 Hello 3
+VM124:2 Hello 4
+VM124:2 Hello 5
+VM124:2 Hello 6
+VM124:2 Hello 7
+VM124:2 Hello 8
+VM124:2 Hello 9
+10
+// do while
+undefined
+var i = 0;
+do{
+    console.log("Hello" , i);
+    i++;
+}while(i < 10);
+VM292:3 Hello 0
+VM292:3 Hello 1
+VM292:3 Hello 2
+VM292:3 Hello 3
+VM292:3 Hello 4
+VM292:3 Hello 5
+VM292:3 Hello 6
+VM292:3 Hello 7
+VM292:3 Hello 8
+VM292:3 Hello 9
+9
+var i = 0;
+do{
+    console.log("Hello" , i);
+    i++;
+}while(i < 10);
+VM294:3 Hello 0
+VM294:3 Hello 1
+VM294:3 Hello 2
+VM294:3 Hello 3
+VM294:3 Hello 4
+VM294:3 Hello 5
+VM294:3 Hello 6
+VM294:3 Hello 7
+VM294:3 Hello 8
+VM294:3 Hello 9
+9
+var i = 0;
+do{
+    console.log("Hello" , i);
+    i++;
+}while(i < 0);
+VM299:3 Hello 0
+0
+//Arrays
+undefined
+var a  = 10;
+undefined
+var arr = [1 ,2  ,3 ,4 ,5 ,6 ,7 ,8];
+undefined
+arr;
+(8) [1, 2, 3, 4, 5, 6, 7, 8]
+arr[2];
+3
+arr[1];
+2
+arr[2];
+3
+arr[3];
+4
+arr[7];
+8
+arr[8];
+undefined
+for(var i = 0;i < arr.length;i++){
+    console.log(arr[i]);
+}
+VM683:2 1
+VM683:2 2
+VM683:2 3
+VM683:2 4
+VM683:2 5
+VM683:2 6
+VM683:2 7
+VM683:2 8
+undefined
+for(var ele of arr){
+    console.log(ele);
+}
+VM758:2 1
+VM758:2 2
+VM758:2 3
+VM758:2 4
+VM758:2 5
+VM758:2 6
+VM758:2 7
+VM758:2 8
+undefined
+for(var i in arr){
+    console.log(i);
+}
+VM808:2 0
+VM808:2 1
+VM808:2 2
+VM808:2 3
+VM808:2 4
+VM808:2 5
+VM808:2 6
+VM808:2 7
+undefined
+for(var i in arr){
+    console.log(arr[i]);
+}
+VM837:2 1
+VM837:2 2
+VM837:2 3
+VM837:2 4
+VM837:2 5
+VM837:2 6
+VM837:2 7
+VM837:2 8
+undefined
+arr = [10 , 20 , 30 ,40];
+(4) [10, 20, 30, 40]
+arr.push(50);
+5
+arr;
+(5) [10, 20, 30, 40, 50]
+arr.pop();
+50
+arr;
+(4) [10, 20, 30, 40]
+arr.unshift(50);
+5
+arr;
+(5) [50, 10, 20, 30, 40]
+arr.shift();
+50
+arr;
+(4) [10, 20, 30, 40]
+arr.splice(2 , 1);
+[30]
+arr;
+(3) [10, 20, 40]
+arr.splice(2 , 0 , 30);
+[]
+arr;
+(4) [10, 20, 30, 40]

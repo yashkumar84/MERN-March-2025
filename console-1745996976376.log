@@ -1,0 +1,166 @@
+function add(a , b){
+    return a + b;
+}
+undefined
+add(10 , 20);
+30
+let obj = new add(10 , 20 );
+undefined
+obj;
+add {}
+class Fan{
+    constructor(wings , height , color , ){
+        this.wings = wings;
+        this.height = height;
+        this.color = color;
+    }
+
+    rotate(){
+        console.log("The Fan is Rotating");
+    }
+}
+undefined
+let fan = new Fan(3 , 1 , "Brown");
+undefined
+fan.height;
+1
+fan.wings;
+3
+fan.rotate();
+VM537:9 The Fan is Rotating
+undefined
+typeof Fan;
+'function'
+function Vehicle(wheels , color , brand){
+    this.wheels = wheels;
+    this.color = color;
+    this.brand = brand;
+
+    transport(){
+        console.log("Transportation");
+    }
+}
+VM954:6 Uncaught SyntaxError: Unexpected token '{'
+function Vehicle(wheels , color , brand){
+    this.wheels = wheels;
+    this.color = color;
+    this.brand = brand;
+
+    let transport = ()=>console.log("Transport");
+}
+undefined
+const vehicle = new Vehicle(4 , "Blue" , "Tata");
+undefined
+vehicle;
+Vehicle {wheels: 4, color: 'Blue', brand: 'Tata'}brand: "Tata"color: "Blue"wheels: 4[[Prototype]]: Object
+function Vehicle(wheels , color , brand){
+    this.wheels = wheels;
+    this.color = color;
+    this.brand = brand;
+
+    this.transport = ()=>console.log("Transport");
+}
+undefined
+const vehicle = new Vehicle(4 , "Blue" , "Tata");
+undefined
+vehicle.transport();
+VM1211:6 Transport
+undefined
+function Vehicle(wheels , color , brand){
+    this.wheels = wheels;
+    this.color = color;
+    this.brand = brand;
+
+    
+}
+undefined
+Vehicle.prototype.transport = ()=>console.log("Transport");
+()=>console.log("Transport")
+const vehicle = new Vehicle(4 , "Blue" , "Tata");
+undefined
+vehicle.transport();
+VM1439:1 Transport
+undefined
+Vehicle.prototype === vehicle.__proto__;
+true
+vehicle.__proto__;
+{transport: ƒ}transport: ()=>console.log("Transport")constructor: ƒ Vehicle(wheels , color , brand)arguments: nullcaller: nulllength: 3name: "Vehicle"prototype: {transport: ƒ}[[FunctionLocation]]: VM1301:1[[Prototype]]: ƒ ()[[Scopes]]: Scopes[2][[Prototype]]: Object
+vehicle.__proto__.transport();
+VM1439:1 Transport
+undefined
+vehicle.transport();
+VM1439:1 Transport
+undefined
+// ABC of js
+undefined
+//Call
+undefined
+const person = {
+    name : "Yash";
+}
+VM1813:2 Uncaught SyntaxError: Unexpected token ';'
+const person = {
+    name : "Yash",
+}
+undefined
+function greeting(greet){
+    console.log(`${greet} ${this.name} `);
+}
+undefined
+greeting("Hi");
+VM1942:2 Hi  
+undefined
+greeting.call(person , ["Hi"]);
+VM1942:2 Hi Yash 
+undefined
+greeting.apply(person , "Hi");
+VM2201:1 Uncaught TypeError: CreateListFromArrayLike called on non-object
+    at <anonymous>:1:10
+(anonymous) @ VM2201:1
+greeting.apply(person , ["Hi"]);
+VM1942:2 Hi Yash 
+undefined
+greeting.call(person , "Hi");
+VM1942:2 Hi Yash 
+undefined
+const newGreet = greeting.bind(person);
+undefined
+newGreet("Hi");
+VM1942:2 Hi Yash 
+undefined
+class Car extends Vehicle{
+    constructor(seatingCapacity , length , width){
+        this.seatingCapacity = seatingCapacity;
+        this.length = length;
+    }
+}
+undefined
+class Car extends Vehicle{
+    constructor(seatingCapacity , length , width , color , brand , wheels){
+        super(wheels , color , brand);
+        this.seatingCapacity = seatingCapacity;
+        this.length = length;
+        this.width = width;
+    }
+}
+undefined
+let car = new Car(5 , 4 , 2 , "Black" , "Toyota" , 4);
+undefined
+car.wheels;
+4
+let obj = {
+    name : "Yash",
+    age : "23",
+}
+undefined
+let obj1 = {
+    profession : "Trainer",
+    __proto__ : obj,
+}
+undefined
+obj1.age;
+'23'
+obj.name;
+'Yash'
+obj1.profession;
+'Trainer'

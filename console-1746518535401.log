@@ -1,0 +1,111 @@
+//Objects
+undefined
+var result = {
+    name : "Yash",
+    maths : 20,
+    physics : 30,
+    chemistry : 40
+};
+undefined
+var shoes = {
+    name : "XYZ",
+    companyName : "NIKE",
+    size : [6 , 7 , 8 ,9 , 10],
+};
+undefined
+shoes["name"];
+'XYZ'
+shoes.name;
+'XYZ'
+shoe.companyName;
+VM406:1 Uncaught ReferenceError: shoe is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM406:1
+shoes.companyName;
+'NIKE'
+shoes.size[3];
+9
+var dhoni = {
+    name : "MS DHONI",
+    age : 40 , 
+    fours : 400
+}
+undefined
+dhoni;
+{name: 'MS DHONI', age: 40, fours: 400}
+dhoni.century = 40;
+40
+dhoni;
+{name: 'MS DHONI', age: 40, fours: 400, century: 40}
+dhoni.6 = 100;
+VM642:1 Uncaught SyntaxError: Unexpected number
+dhoni[6] = 100;
+100
+dhoni;
+{6: 100, name: 'MS DHONI', age: 40, fours: 400, century: 40}
+dhoni["address"] = "Jharkhand";
+'Jharkhand'
+dhoni;
+{6: 100, name: 'MS DHONI', age: 40, fours: 400, century: 40, address: 'Jharkhand'}6: 100address: "Jharkhand"age: 40century: 40fours: 400name: "MS DHONI"[[Prototype]]: Object
+dhoni[6] = 150;
+150
+dhoni;
+{6: 150, name: 'MS DHONI', age: 40, fours: 400, century: 40, address: 'Jharkhand'}
+delete dhoni.address;
+true
+dhoni;
+{6: 150, name: 'MS DHONI', age: 40, fours: 400, century: 40}
+delete dhoni.abc;
+true
+// Function
+undefined
+var a = 10;
+undefined
+var b = 20;
+undefined
+var c = a +b;
+undefined
+c;
+30
+function add(a , b){
+    return a + b;
+}
+undefined
+add(10 , 20);
+30
+add(20 , 30);
+50
+//Anonymous Function
+undefined
+var func = function (a , b){
+    return a + b;
+}
+undefined
+func(20 , 30);
+50
+var add1 = (a , b) => a + b;
+undefined
+add1(40 , 50);
+90
+var obj = new add(10 ,30);
+undefined
+obj;
+add {}
+var obj = new add1(10 ,30);
+VM1640:1 Uncaught TypeError: add1 is not a constructor
+    at <anonymous>:1:11
+(anonymous) @ VM1640:1
+// IIFE
+undefined
+(function (a , b){
+    return a + b;
+})(10 , 40);
+50
+var add1 = (a , b) => {
+    //Line 1
+    //Line 2
+    return a + b;
+};
+undefined
+add1(40 , 20);
+60
