@@ -1,0 +1,57 @@
+let a =0;
+
+const arr : number[] = [1 ,2 ,3 ];
+
+type ObjType = {
+    name : string;
+    age : number;
+    address : string;
+    email : string;
+    mob : number;
+    userName : string;
+    profilePhoto?: string;
+}
+
+type AnotherType = {
+    description : string;
+}
+
+interface ObjectType{
+    name : string;
+    age : number;
+    address : string;
+    email : string;
+    mob : number;
+    userName : string;
+    profilePhoto?: string;
+}
+
+
+interface ObjectType{
+    decscription : string;
+}
+
+type themes = "Light" | "DarK";
+
+let systemTheme : themes = "Light"; 
+
+const obj : ObjType & AnotherType = {
+    name : "Hello", 
+    age : 45,
+    address : "Ghaziabad",
+    email : "hello@gmail.com",
+    mob : 9012345678,
+    userName : "hello_123",
+    description : "jsdhjs"
+};
+
+function add(a : number, b : number) : number{
+    return a + b;
+}
+
+const arrow = (a : number , b : number) : number => a + b;
+
+for(let i = 0;i<10;i++){
+    
+}
+
