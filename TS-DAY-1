@@ -1,0 +1,96 @@
+// Welcome to the TypeScript Playground, this is a website
+// which gives you a chance to write, share and learn TypeScript.
+
+// You could think of it in three ways:
+//
+//  - A location to learn TypeScript where nothing can break
+//  - A place to experiment with TypeScript syntax, and share the URLs with others
+//  - A sandbox to experiment with different compiler features of TypeScript
+
+// let anExampleVariable  = 10;
+
+// interface ObjType {
+//     name : string;
+//     age : number;
+// }
+
+// type Obj = {
+//     name : string;
+//     age : number;
+// }
+
+// const obj : Obj = {
+//     name : "Yash",
+//     age : 18,
+   
+// }
+
+// const arr : number[] = [1 ,2];
+// console.log(typeof arr);
+// let arr1;
+
+
+class Fan{
+    wings : number;
+    color : string;
+    length : number;
+
+    constructor(wings : number , color : string , length : number){
+        this.wings = wings;
+        this.color = color;
+        this.length = length;
+    }
+
+    rotate(){
+        console.log("The Fan is Rotating");
+    }
+    
+}
+
+let fan = new Fan(3 , "brown" , 5);
+console.log(fan.rotate());
+
+abstract class Vehicle {
+    wheels : number;
+    color : string;
+    seatingCapacity : number;
+    constructor(wheels : number , color : string , seats : number){
+        this.wheels = wheels;
+        this.color = color;
+        this.seatingCapacity = seats;
+    }
+
+    abstract moving() : void;
+    
+
+    brake(){
+        console.log("You have Applied Brake");
+    }
+}
+
+
+abstract class Car extends Vehicle{
+    carType : string;
+    carName : string;
+    isSunroof : boolean;
+    constructor(wheels : number , color : string , seats : number , carType : string , carName : string , isSunroof : boolean){
+        super(wheels , color , seats);
+        this.carName = carName;
+        this.carType = carType;
+        this.isSunroof = isSunroof;
+
+    }
+
+    openWindow(){
+        console.log("Window is Opening");
+    }
+
+}
+
+
+
+
+
+// To learn more about the language, click above in "Examples" or "What's New".
+// Otherwise, get started by removing these comments and the world is your playground.
+  
