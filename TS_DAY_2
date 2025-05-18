@@ -1,0 +1,59 @@
+//Polymorphism
+class Engine{
+
+}
+
+abstract class Car{
+    wheels:number;
+    color : string;
+    name : string;
+    engine : Engine;
+
+    constructor(wheels : number , color : string, name : string , engine : Engine){
+        this.name = name;
+        this.color = color;
+        this.wheels = wheels;
+        this.engine = Engine;
+    }
+
+    openWindow(){
+        console.log("Window is Opening");
+    }
+}
+
+class Alto extends Car{
+    average : number;
+    wheels : number;
+    fuelTankCapacity : number;
+
+
+    constructor(wheels : number , color : string , name : string , average : number , ftc : number , engine : Engine){
+        super(wheels , color , name , engine);
+        this.average = average;
+        this.fuelTankCapacity = ftc;
+        this.wheels = wheels;
+    }
+   
+    openWindow(){
+        console.log("Window Opening Manually");
+    }
+}
+
+
+class Calc{
+    add(a : number , b : number) : number;
+
+    add(a : number , b: number , c : number) : number;
+
+    add(a:number , b:number , c?:number) : number {
+        if(c !== undefined){
+            return a + b + c;
+        }
+        return a + b;
+    }
+}
+
+
+let engine = new Engine();
+
+let alto = new Alto(4 , "Black" , "Car" , 24 , 40 , engine);
